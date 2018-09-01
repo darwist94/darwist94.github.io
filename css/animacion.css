@@ -1,0 +1,26 @@
+h1 > span{
+    
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+#foto > img:hover{
+    -webkit-transform: rotateX(150deg); /* Safari */
+    
+    transform: translateX(10px) rotate(10deg) translateY(5px);
+}
