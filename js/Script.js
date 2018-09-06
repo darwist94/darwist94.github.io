@@ -4,7 +4,10 @@ localStorage.visitas++;
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 
-    $("#visitas").html(localStorage.visitas) 
+   	var temp = " veces"
+    if(localStorage.visitas == 1)
+		temp = " vez";
+    $("#visitas").html(localStorage.visitas+""+temp) 
 
 
     /*$("#sideNav").on("mouseover", function(){
