@@ -5,6 +5,7 @@ h1 > span, h2{
     animation: mymove 5s infinite;
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
+
 }
 
 /* Safari 4.0 - 8.0 */
@@ -23,4 +24,13 @@ h1 > span, h2{
     -webkit-transform: rotateX(150deg); /* Safari */
     
     transform: translateX(10px) rotate(10deg) translateY(5px);
+}
+
+h1, h2, a:hover{
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+a:hover{
+
+    text-decoration:none;
 }
